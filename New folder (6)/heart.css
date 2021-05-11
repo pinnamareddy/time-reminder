@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    height:auto;
+}
+body{
+    margin:0;
+    display: flex;
+    min-height: 100vh;
+    justify-content:left;
+    align-items: center;
+
+}
+.heart{
+    position: fixed;
+    right: -10vh;
+    font-size: 3rem;
+    transform: translateX(0vh);
+    animation: fall 100s linear forwards;
+    animation-name: fall1;
+}
+
+@keyframes fall1{
+    to{
+        transform: translateX(-240vh);
+    }
+}
+@media screen and (max-width:720px)
+{.heart{
+    position: fixed;
+    right: -10vh;
+    font-size: 1rem;
+    transform: translateX(0vh);
+    animation: fall 100s linear forwards;
+    animation-name: fall1;
+}
+
+@keyframes fall1{
+    to{
+        transform: translateX(-240vh);
+    }
+}
+
+}
+.heart1{
+    position: fixed;
+    left: 10vh;
+    font-size: 2rem;
+    transform: translateX(0vh);
+    animation: fall 500s linear forwards;
+    animation-name: fall2;
+}
+@keyframes fall2{
+    to{
+        transform: translateX(240vh);
+    }
+}
+@media screen and (max-width:720px)
+{.heart1{
+    position: fixed;
+    left: 10vh;
+    font-size: 1rem;
+    transform: translateX(0vh);
+    animation: fall 500s linear forwards;
+    animation-name: fall2;
+}
+@keyframes fall2{
+    to{
+        transform: translateX(240vh);
+    }
+}
+
+}
